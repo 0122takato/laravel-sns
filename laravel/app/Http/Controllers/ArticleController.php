@@ -45,6 +45,11 @@ class ArticleController extends Controller
         ];
 
         return view('articles.index', ['articles' => $articles]);
+
+        //以下の２パターンでも連想配列で第二引数に渡すことが可能。
+        // return view('articles.index')->with(['articles'=>$articles]);
+        // return view('articles.index', compact('articles'));
+
     }
     //==========ここまで追加==========
 }
