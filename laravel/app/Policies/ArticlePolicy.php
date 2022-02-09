@@ -75,7 +75,7 @@ class ArticlePolicy
      * @param  \App\Article  $article
      * @return mixed
      */
-    public function restore(User $user, Article $article)
+    public function restore(?User $user, Article $article)
     {
         //
     }
@@ -87,7 +87,7 @@ class ArticlePolicy
      * @param  \App\Article  $article
      * @return mixed
      */
-    public function forceDelete(User $user, Article $article)
+    public function forceDelete(?User $user, Article $article)
     {
         //
     }
