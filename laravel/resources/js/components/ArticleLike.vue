@@ -8,4 +8,17 @@
 </template>
 
 <script>
+  export default {
+    props: {
+      initialIsLikedBy: {
+        type: Boolean,
+        default: false,
+      },
+    },
+    data() {
+      return {
+        isLikedBy: this.initialIsLikedBy,
+      }
+    },
+  }
 </script>
